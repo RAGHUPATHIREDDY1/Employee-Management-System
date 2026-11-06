@@ -16,7 +16,10 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 app.use(
   cors({
-    origin: "http://localhost:5173"
+    origin: [
+      "http://localhost:5173",
+      "https://employees-management-system-one.vercel.app"
+    ]
   })
 );
 app.use(express.json());
